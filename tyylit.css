@@ -8,7 +8,7 @@ body {
 
 ul {
   position: fixed;
-  top: 0;
+  top: 0%;
   width: 100%;
   background-color: #dddddd;
 }
@@ -40,10 +40,10 @@ li:last-child {
   visibility: hidden;
 }
 ul {
-  margin-left: 0;
+  margin-left: 0px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
   background-color: #333;
 }
