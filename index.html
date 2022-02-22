@@ -1,56 +1,59 @@
 <!-- HTML-versio (HTML 5), jota käytetään.-->
 <!DOCTYPE html>
 <html>
-  <!-- Yleiset (otsikkotason) määritykset. -->
-  <head>
-    <!-- google haun indesöinti esto-->
-    <meta name="”robots”" content="”noindex”" />
-    <title>Bootstrap-esimerkki</title>
+<!-- Yleiset (otsikkotason) määritykset. -->
 
-    <!-- Merkistön koodaustapa.-->
-    <meta charset="utf-8" />
+<head>
+  <!-- google haun indesöinti esto-->
+  <meta name="”robots”" content="”noindex”" />
+  <title>Bootstrap-esimerkki</title>
 
-    <!-- Katseluikkunan leveyden määritys: määritetään seuraamaan ruudun leveyttä. -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <!-- Bootstrap 5.1.#. -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Merkistön koodaustapa.-->
+  <meta charset="utf-8" />
 
-    <!-- Oma css-tiedosto -->
-    <link rel="stylesheet" href="tyylit.css" />
-  </head>
+  <!-- Katseluikkunan leveyden määritys: määritetään seuraamaan ruudun leveyttä. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Bootstrap 5.1.#. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Verkkosivun sisältö-->
-  <body>
-    <nav>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="windows.html">Windows</a></li>
-      <li><a href="elements.html">Elements</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </nav>
-    <div class="container">
-      <h1>Hello World!</h1>
-      <img
-        class="img-fluid"
-        src="etc/camera.jpg"
-        alt="Blackmagic Pocket Cinema Camera 4K"
-      />
-      <div class="col-sm-flex">
-        <div class="row justify-content-center">
-          <div class="col-sm-4 col-sm-pull-1" style="background-color: yellow">
-            <p>Lorem ipsum...</p>
-          </div>
-          <div class="col-sm-2 col-sm-pull-1*" style="background-color: pink">
-            <p>Sed ut perspiciatis...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+  <!-- Oma css-tiedosto -->
+  <link rel="stylesheet" href="tyylit.css" />
+</head>
+
+<!-- Verkkosivun sisältö-->
+
+<body>
+  <nav>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="windows.html">Windows</a></li>
+    <li><a href="elements.html">Element</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </nav>
+
+  <div class="container">
+    <div class="empty" height="40px"></div>
+    <h1>Hello World!</h1>
+    <img class="img-fluid" src="etc/camera.jpg" alt="Blackmagic Pocket Cinema Camera 4K" />
+    <p>
+      Ohjelma Blackmagic Desingin kameroiden ohjaamisen Windows
+      käyttöjärjestelmästä (USB ja Bluetooth), sekä Element Gear ohjaimen
+      sisään asennettavalla Arduinolla (USB ja Bluetooth).<br />
+      magni quia ea voluptatum minima et voluptatem itaque ut voluptatibus
+      amet ut magni dolor et ratione dicta ut natus consequatur! Et molestias
+      omnis sit possimus officiis nam temporibus ullam ut sunt dolorem aut
+      aspernatur possimus. At explicabo quaerat et voluptas impedit qui
+      aliquam quas qui autem ipsum et asperiores esse. At reprehenderit enim
+      est neque necessitatibus qui rerum voluptatem ut illo illo cum labore
+      modi?
+    </p>
+    <a href=" ms-windows-store://pdp/?ProductId=9wzdncrfj364">
+      <img class="img_icon" src="etc/skype64x64.svg" alt="Skype app" />
+    </a>
+    Skype app (testi linkki)
+
+  </div>
+  </div>
+</body>
+
 </html>
