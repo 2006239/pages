@@ -1,12 +1,17 @@
 /* Omat tyylimääritykset */
 
 body {
-  background-color: #f3f3f3;
+ /* background-color: #f3f3f3;*/
   height: 100%;
   min-height: 100%;
   font-style: normal;
   font-size: 18px;
   font: Arial;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('etc/tausta.jpg');
+  background-position: top center;
 }
 
 ul {
@@ -88,4 +93,10 @@ body {
   background-color: rgb(246, 246, 246);
   color: white;
   text-align: center;
+  top:100vh;
+}
+
+.image-link {
+  border: none;
+  text-decoration: none ;
 }

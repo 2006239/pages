@@ -28,56 +28,85 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="windows.html">Windows</a></li>
     <li><a href="elements.html">Element</a></li>
-    <li><a href="contact.html">Contact</a></li>
   </nav>
-  <div class="empty"></div>
+
   <!-- Wrapper container -->
-  <div class="container-sm">
-    <div class="col-sm-offset-3">
-      <!-- Bootstrap 5 starter form -->
-      <form id="contactForm">
-        <!--  Email address input -->
-        <div class="sm-3">
-          <label class="form-label" for="name">Sähköpostiosoite</label>
-          <input class="form-control" id="emailAddress" type="email" placeholder="Sähköpostiosoite"
-            data-sb-validations="required, email" />
-          <div class="invalid-feedback" data-sb-feedback="email:required">
-            Sähköpostiosoite on vaadittu
-          </div>
-        </div>
 
-        <!--serialnumber input -->
-        <div class="sm-3">
-          <label class="form-label" for="serialnumber">Sarjanumeo</label>
-          <input class="form-control" id="serialnumber" type="serial" placeholder="App serialnumber" />
-        </div>
-
-        <!-- Message input -->
-        <div class="sm-3">
-          <label class="form-label" for="message">Viesti</label>
-          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem"
-            data-sb-validations="required"></textarea>
-          <div class="invalid-feedback" data-sb-feedback="message:required">
-            Message is required.
-          </div>
-        </div>
-
-        <!-- success message -->
-        <div class="d-none" id="submitSuccessMessage">
-          <div class="text-center mb-3">Form submission successful!</div>
-        </div>
-
-        <!-- error message -->
-        <div class="d-none" id="submitErrorMessage">
-          <div class="text-center text-danger mb-3">Error sending message!</div>
-        </div>
-
-        <!-- Submit button -->
-        <div class="d-grid">
-          <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-        </div>
-      </form>
+  <div class="container-sm" style="background-color: white;">
+    <div class="empty"></div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p> </p>
+      </div>
     </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-3">
+        <P>
+        <H1>Sähköposti </H1><br />
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Tällä lomakkeella voit ilmoitta ohjelmassa esiintyvistä bugeista ja tarpeellisista
+          toiminnoista jotka uupuvat. Lisäksi lisäämällä ohjelmasta löytyvän tuoteavaimen saat vastaus postissa lataus
+          linkin ohjelman arduinolle versiolle.
+          et ratione dicta ut natus consequatur! Et molestias
+          omnis sit possimus officiis nam temporibus ullam ut sunt dolorem aut
+          aspernatur possimus. At explicabo quaerat et voluptas impedit qui
+          aliquam quas qui autem ipsum et asperiores esse. <strong>Ei toiminnassa</string>
+        </P>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- Bootstrap 5 starter form -->
+        <form id="contactForm">
+          <!--  Email address input -->
+          <div class="col-sm-12">
+            <label class="form-label" for="name">Sähköpostiosoite</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Sähköpostiosoite"
+              data-sb-validations="required, email" />
+            <div class="invalid-feedback" data-sb-feedback="email:required">
+              Sähköpostiosoite on vaadittu
+            </div>
+          </div>
+
+
+          <!--serialnumber input -->
+          <div class="col-sm-12">
+            <label class="form-label" for="serialnumber">Tuotenumero</label>
+            <input class="form-control" id="serialnumber" type="serial" placeholder="Tuotenumero" />
+          </div>
+
+          <!-- Message input -->
+          <div class="col-sm-12">
+            <label class="form-label" for="message">Viesti</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Viesti" style="height: 10rem"
+              data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">
+              Viesti kenttä ei saa olla tyhjä.
+            </div>
+          </div>
+
+          <!-- success message -->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">Form submission successful!</div>
+          </div>
+
+          <!-- error message -->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+          </div>
+
+          <!-- Submit button -->
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">Lähetä</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="empty"></div>
   </div>
 
 </body>
