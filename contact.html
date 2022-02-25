@@ -6,7 +6,7 @@
 <head>
   <!-- google haun indesöinti esto-->
   <meta name="”robots”" content="”noindex”" />
-  <title>Bootstrap-esimerkki</title>
+  <title>Blackmagic controller</title>
 
   <!-- Merkistön koodaustapa.-->
   <meta charset="utf-8" />
@@ -19,116 +19,114 @@
 
   <!-- Oma css-tiedosto -->
   <link rel="stylesheet" href="tyylit.css" />
+  <link rel="stylesheet" href="footer.css" />
 </head>
 
-<!-- Verkkosivun sisältö-->
-
 <body>
-  <nav>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="windows.html">Windows</a></li>
-    <li><a href="elements.html">Element</a></li>
-  </nav>
-
-  <!-- Wrapper container -->
-
-  <div class="container-sm" style="background-color: white;">
-    <div class="empty"></div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p> </p>
-      </div>
+  <div id="page-container">
+    <div id="header-container">
+      <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="windows.html">Windows</a></li>
+        <li><a href="element.html">Element</a></li>
+      </nav>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-3">
-        <P>
-        <H1>Sähköposti </H1><br />
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Tällä lomakkeella voit ilmoitta ohjelmassa esiintyvistä bugeista ja tarpeellisista
-          toiminnoista jotka uupuvat. Lisäksi lisäämällä ohjelmasta löytyvän tuoteavaimen saat vastaus postissa lataus
-          linkin ohjelman arduinolle versiolle.
-          et ratione dicta ut natus consequatur! Et molestias
-          omnis sit possimus officiis nam temporibus ullam ut sunt dolorem aut
-          aspernatur possimus. At explicabo quaerat et voluptas impedit qui
-          aliquam quas qui autem ipsum et asperiores esse. <strong>Ei toiminnassa</string>
-        </P>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <!-- Bootstrap 5 starter form -->
-        <form id="contactForm">
-          <!--  Email address input -->
-          <div class="col-sm-12">
-            <label class="form-label" for="name">Sähköpostiosoite</label>
-            <input class="form-control" id="emailAddress" type="email" placeholder="Sähköpostiosoite"
-              data-sb-validations="required, email" />
-            <div class="invalid-feedback" data-sb-feedback="email:required">
-              Sähköpostiosoite on vaadittu
-            </div>
-          </div>
+    <div id="content-wrap">
 
-
-          <!--serialnumber input -->
-          <div class="col-sm-12">
-            <label class="form-label" for="serialnumber">Tuotenumero</label>
-            <input class="form-control" id="serialnumber" type="serial" placeholder="Tuotenumero" />
-          </div>
-
-          <!-- Message input -->
-          <div class="col-sm-12">
-            <label class="form-label" for="message">Viesti</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Viesti" style="height: 10rem"
-              data-sb-validations="required"></textarea>
-            <div class="invalid-feedback" data-sb-feedback="message:required">
-              Viesti kenttä ei saa olla tyhjä.
-            </div>
-          </div>
-
-          <!-- success message -->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center mb-3">Form submission successful!</div>
-          </div>
-
-          <!-- error message -->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
-          </div>
-
-          <!-- Submit button -->
-          <div class="d-grid">
-            <button class="btn btn-primary btn-lg" type="submit">Lähetä</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="empty"></div>
-  </div>
-  <footer class="text-center text-lg-start bg-light text-muted footers" style="top:100vh;">
-    <div class="footer navbar-inverse">
-      <div class="fluid-contaider" style="background-color: #333;">
+      <div class="container-sm" style="background-color: white;">
+        <div class="empty"></div>
         <div class="row justify-content-center">
-          <div class="col-sm-4" style="color:white;min-width: 120px;">
-            <p>Yhteystiedot:<br />
-              matti@meikäläinen.fi
-
-          </div>
-          <div class="col-sm-4" style="color:white;;min-width: 120px;">
-            <p>Linkit:<br />
-              <a href="https://www.blackmagicdesign.com/" style="text-decoration:none;">Blackmagic Desing</a>
-
-
+          <div class="col-sm-3">
+            <P>
+            <H1>Sähköposti </H1><br />
+            </p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Tällä lomakkeella voit ilmoitta ohjelmassa esiintyvistä bugeista ja kertoa tarpeellisista
+              toiminnoista jotka uupuvat. Lisäksi lisäämällä ohjelmasta löytyvän tuoteavaimen saat sähköpostitse
+              lataus
+              linkin ohjelman arduinolle versiolle.
+              et ratione dicta ut natus consequatur! Et molestias
+              omnis sit possimus officiis nam temporibus ullam ut sunt dolorem aut
+              aspernatur possimus. At explicabo quaerat et voluptas impedit qui
+              aliquam quas qui autem ipsum et asperiores esse. <strong>Ei toiminnassa</string>
+            </P>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Bootstrap 5 starter form -->
+            <form id="contactForm">
+              <!--  Email address input -->
+              <div class="col-sm-12">
+                <label class="form-label" for="name">Sähköpostiosoite</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Sähköpostiosoite"
+                  data-sb-validations="required, email" />
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  Sähköpostiosoite on vaadittu
+                </div>
+              </div>
+
+
+              <!--serialnumber input -->
+              <div class="col-sm-12">
+                <label class="form-label" for="serialnumber">Tuotenumero</label>
+                <input class="form-control" id="serialnumber" type="serial" placeholder="Tuotenumero" />
+              </div>
+
+              <!-- Message input -->
+              <div class="col-sm-12">
+                <label class="form-label" for="message">Viesti</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Viesti" style="height: 10rem"
+                  data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="message:required">
+                  Viesti kenttä ei saa olla tyhjä.
+                </div>
+              </div>
+
+              <!-- success message -->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">Form submission successful!</div>
+              </div>
+
+              <!-- error message -->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+              </div>
+
+              <!-- Submit button -->
+              <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Lähetä</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="empty"></div>
       </div>
-
     </div>
-  </footer>
+    <footer id="footer">
+      <footer class="text-center text-lg-start bg-light text-muted" style="top:100vh;">
+        <div class="footer navbar-inverse">
+          <div class="fluid-contaider" style="background-color: #333;">
+            <div class="row justify-content-center">
+              <div class="col-sm-4" style="color:white;min-width: 120px;">
+                <p>Yhteystiedot:<br />
+                  matti@meikäläinen.fi</p>
 
+              </div>
+              <div class="col-sm-4" style="color:white;;min-width: 120px;">
+                <p>Linkit:<br />
+                  <a href="https://www.blackmagicdesign.com/" style="text-decoration:none;">Blackmagic
+                    Desing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
