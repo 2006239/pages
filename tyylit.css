@@ -108,8 +108,8 @@ body {
   position:absolute;
 }
 @media only screen 
-  and (min-width: 451px) 
-  and (max-width: 650px){
+  and (min-width: 400px) 
+  and (max-width: 760px){
 #testi { width: 100%}
 
 }
